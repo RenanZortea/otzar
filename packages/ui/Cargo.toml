@@ -6,6 +6,12 @@ edition = "2021"
 [dependencies]
 dioxus = { workspace = true }
 api = { workspace = true }
+serde = { version = "1.0", features = ["derive"] }
+comrak = "0.47"
+markdown = "1.0"
+
+katex = { version = "0.4", optional = true }
 
 [features]
+native-math = ["katex"]
 server = ["api/server"]

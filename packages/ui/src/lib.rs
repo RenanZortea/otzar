@@ -1,10 +1,10 @@
 //! This crate contains all shared UI for the workspace.
 
-mod hero;
-pub use hero::Hero;
+mod outliner;
+pub use outliner::Outliner;
 
-mod navbar;
-pub use navbar::Navbar;
+mod tree;
+pub use tree::Tree;
 
-mod echo;
-pub use echo::Echo;
+mod markdown;
+pub use markdown::render_markdown;

@@ -1,10 +1,9 @@
 use dioxus::prelude::*;
-use ui::{Echo, Hero};
+use ui::Outliner;
 
 #[component]
 pub fn Home() -> Element {
     rsx! {
-        Hero {}
-        Echo {}
+        Outliner{}
     }
 }
